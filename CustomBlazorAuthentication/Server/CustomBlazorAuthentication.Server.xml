@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomBlazorAuthentication.Server</name>
+    </assembly>
+    <members>
+        <member name="P:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.Type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.StringType">
+            <summary>
+            String type
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.StatusCode">
+            <summary>
+            Status code
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.#ctor(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="name">Name</param>
+            <param name="description">Description</param>
+            <param name="type">Type</param>
+            <param name="statusCode">Status code</param>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.ProducesResponseHeaderAttribute.#ctor(System.String,System.String,System.Type,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="name">Name</param>
+            <param name="description">Description</param>
+            <param name="type">Type</param>
+            <param name="statusCode">Status code</param>
+        </member>
+        <member name="F:CustomBlazorAuthentication.Server.Controllers.AuthenticationController.authenticationService">
+            <summary>
+            Authentication service
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.AuthenticationController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Identity.SignInManager{CustomBlazorAuthentication.Shared.Model.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration">Configuration settings</param>
+            <param name="signInManager">Authentication manager</param>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.AuthenticationController.Login(CustomBlazorAuthentication.Shared.Model.LoginRequest)">
+            <summary>
+            Manage user authentication
+            </summary>
+            <param name="request">Authentication info</param>
+            <returns>Request result</returns>
+            <response code="200">Request completed successfully</response>
+            <response code="400">Request failed</response>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.AuthenticationController.Logout">
+            <summary>
+            Manage user logout
+            </summary>
+            <returns>Request result</returns>
+            <response code="200">Request completed successfully</response>
+            <response code="400">Request failed</response>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Controllers.BaseController.AccessToken">
+            <summary>
+            Access token
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Controllers.BaseController.UserId">
+            <summary>
+            User id
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Controllers.BaseController.UserName">
+            <summary>
+            User name
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Controllers.BaseController.UserRole">
+            <summary>
+            User role
+            </summary>
+        </member>
+        <member name="F:CustomBlazorAuthentication.Server.Controllers.UsersController.usersService">
+            <summary>
+            User service
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.UsersController.#ctor(Microsoft.AspNetCore.Identity.UserManager{CustomBlazorAuthentication.Shared.Model.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userManager">User manager</param>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.UsersController.Post(CustomBlazorAuthentication.Shared.Model.User)">
+            <summary>
+            Manage user insert
+            </summary>
+            <param name="user"></param>
+            <returns>Request result</returns>
+            <response code="200">Request completed successfully</response>
+            <response code="400">Request failed</response>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.UsersController.Delete(System.Guid)">
+            <summary>
+            Manage user delete
+            </summary>
+            <param name="userId">User id</param>
+            <returns>Request result</returns>
+            <response code="200">Request completed successfully</response>
+            <response code="400">Request failed</response>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.WeatherForecastController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get the weather forecast info
+            </summary>
+            <returns>weather forecast info</returns>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.CustomIdentity.RoleStore.ProviderName">
+            <summary>
+            Provider name
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.CustomIdentity.RoleStore.ConnectionString">
+            <summary>
+            Connection string
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.CustomIdentity.RoleStore.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.CustomIdentity.RoleStore.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="providerName">Provider name</param>
+            <param name="connectionString">Connection string</param>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.CustomIdentity.RoleStore.Dispose">
+            <summary>
+            Dispose the object
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.CustomIdentity.UserStore.ProviderName">
+            <summary>
+            Provider name
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.CustomIdentity.UserStore.ConnectionString">
+            <summary>
+            Connection string
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.CustomIdentity.UserStore.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.CustomIdentity.UserStore.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="providerName">Provider name</param>
+            <param name="connectionString">Connection string</param>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Startup.ProviderName">
+            <summary>
+            Provider name
+            </summary>
+        </member>
+        <member name="P:CustomBlazorAuthentication.Server.Startup.ConnectionString">
+            <summary>
+            Connection string
+            </summary>
+        </member>
+        <member name="M:CustomBlazorAuthentication.Server.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Swashbuckle.AspNetCore.Filters.AppendAuthorizeToSummaryOperationFilter`1.#ctor(System.Collections.Generic.IEnumerable{Swashbuckle.AspNetCore.Filters.PolicySelectorWithLabel{`0}})">
+            <summary>
+            Constructor for AppendAuthorizeToSummaryOperationFilter
+            </summary>
+            <param name="policySelectors">Used to select the authorization policy from the attribute e.g. (a => a.Policy)</param>
+        </member>
+    </members>
+</doc>

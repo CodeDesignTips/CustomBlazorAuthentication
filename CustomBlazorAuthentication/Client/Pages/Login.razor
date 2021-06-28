@@ -1,0 +1,36 @@
+﻿@page "/login"
+
+<div id="login">
+    <div class="container">
+        <!-- Title -->
+        <div class="row">
+            <div class="col-sm">
+                <h1>Login</h1>
+            </div>
+        </div>
+        <div class="row">
+            <EditForm EditContext="@EditContext" OnSubmit="@Authenticate">
+                <DataAnnotationsValidator />
+
+                <!-- User -->
+                <div class="form-group">
+                    <label for="userName">User</label>
+                    <InputText id="userName" class="form-control" @bind-Value="@UserName" />
+                    <ValidationMessage For="@(() => UserName)" />
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <InputText type="password" id="password" class="form-control" @bind-Value="@Password" />
+                    <ValidationMessage For="@(() => Password)" />
+                </div>
+                <!-- Action -->
+                <button type="submit" class="btn btn-primary">Login</button>
+            </EditForm>
+        </div>
+        <!-- Error -->
+        <div class="row mt-1">
+            <label>@ErrorMessage</label>
+        </div>
+    </div>
+</div>

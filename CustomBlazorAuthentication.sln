@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBlazorAuthentication.Server", "CustomBlazorAuthentication\Server\CustomBlazorAuthentication.Server.csproj", "{3E398424-35E3-4FF9-888C-C629906A5EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBlazorAuthentication.Client", "CustomBlazorAuthentication\Client\CustomBlazorAuthentication.Client.csproj", "{BE51D47E-4E4A-462F-B183-3D2CCDFA8858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBlazorAuthentication.Shared", "CustomBlazorAuthentication\Shared\CustomBlazorAuthentication.Shared.csproj", "{1685DCC5-7054-4D34-9D9B-9E9A805B989D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBlazorAuthentication.DataLayer", "CustomBlazorAuthentication.DataLayer\CustomBlazorAuthentication.DataLayer.csproj", "{617E0974-AE47-43E6-A294-8FC1FE62D2B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBlazorAuthentication.ServiceLayer", "CustomBlazorAuthentication.ServiceLayer\CustomBlazorAuthentication.ServiceLayer.csproj", "{715D12BE-7EAD-4732-B956-1BBAEB104DA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E398424-35E3-4FF9-888C-C629906A5EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E398424-35E3-4FF9-888C-C629906A5EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E398424-35E3-4FF9-888C-C629906A5EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E398424-35E3-4FF9-888C-C629906A5EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE51D47E-4E4A-462F-B183-3D2CCDFA8858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE51D47E-4E4A-462F-B183-3D2CCDFA8858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE51D47E-4E4A-462F-B183-3D2CCDFA8858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE51D47E-4E4A-462F-B183-3D2CCDFA8858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1685DCC5-7054-4D34-9D9B-9E9A805B989D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1685DCC5-7054-4D34-9D9B-9E9A805B989D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1685DCC5-7054-4D34-9D9B-9E9A805B989D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1685DCC5-7054-4D34-9D9B-9E9A805B989D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617E0974-AE47-43E6-A294-8FC1FE62D2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617E0974-AE47-43E6-A294-8FC1FE62D2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617E0974-AE47-43E6-A294-8FC1FE62D2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617E0974-AE47-43E6-A294-8FC1FE62D2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715D12BE-7EAD-4732-B956-1BBAEB104DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715D12BE-7EAD-4732-B956-1BBAEB104DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715D12BE-7EAD-4732-B956-1BBAEB104DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715D12BE-7EAD-4732-B956-1BBAEB104DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEF7A11B-68D6-4B95-BE1C-567CCAA74DCE}
+	EndGlobalSection
+EndGlobal

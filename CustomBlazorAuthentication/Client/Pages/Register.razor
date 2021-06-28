@@ -1,0 +1,69 @@
+﻿@page "/register"
+
+<div id="register">
+    <div class="container">
+        <!-- Title -->
+        <div class="row">
+            <div class="col-sm">
+                <h1>Register user</h1>
+            </div>
+        </div>
+        <div class="row">
+            <EditForm @ref="Form" Model="@User" OnSubmit="@RegisterUser">
+                <DataAnnotationsValidator />
+
+                <!-- User / Email -->
+                <div class="form-row">
+                    <!-- User -->
+                    <div class="col form-group">
+                        <label for="userName">User</label>
+                        <InputText id="userName" class="form-control" @bind-Value="User.UserName" />
+                        <ValidationMessage For="@(() => User.UserName)" />
+                    </div>
+                    <!-- Email -->
+                    <div class="col form-group">
+                        <label for="email">Email</label>
+                        <InputText id="email" class="form-control" @bind-Value="@User.Email" />
+                        <ValidationMessage For="@(() => User.Email)" />
+                    </div>
+                </div>
+                <!-- Password / PasswordConfirm -->
+                <div class="form-row">
+                    <!-- Password -->
+                    <div class="col form-group">
+                        <label for="password">Password</label>
+                        <InputText id="password" type="password" class="form-control" @bind-Value="@User.Password" />
+                        <ValidationMessage For="@(() => User.Password)" />
+                    </div>
+                    <!-- PasswordConfirm -->
+                    <div class="col form-group">
+                        <label for="passwordConfirm">Password confirm</label>
+                        <InputText id="passwordConfirm" type="password" class="form-control" @bind-Value="@User.PasswordConfirm" />
+                        <ValidationMessage For="@(() => User.PasswordConfirm)" />
+                    </div>
+                </div>
+                <!-- Name / Surname -->
+                <div class="form-row">
+                    <!-- Name -->
+                    <div class="col form-group">
+                        <label for="name">Name</label>
+                        <InputText id="name" class="form-control" @bind-Value="@User.Name" />
+                        <ValidationMessage For="@(() => User.Name)" />
+                    </div>
+                    <!-- Surname -->
+                    <div class="col form-group">
+                        <label for="surname">Surname</label>
+                        <InputText id="surname" class="form-control" @bind-Value="@User.Surname" />
+                        <ValidationMessage For="@(() => User.Surname)" />
+                    </div>
+                </div>
+                <!-- Action -->
+                <button type="submit" class="btn btn-primary">Register</button>
+            </EditForm>
+        </div>
+        <!-- Message -->
+        <div class="row">
+            <label>@Message</label>
+        </div>
+    </div>
+</div>
