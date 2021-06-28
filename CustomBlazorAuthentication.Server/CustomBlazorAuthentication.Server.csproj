@@ -24,14 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CustomBlazorAuthentication.DataLayer\CustomBlazorAuthentication.DataLayer.csproj" />
-    <ProjectReference Include="..\..\CustomBlazorAuthentication.ServiceLayer\CustomBlazorAuthentication.ServiceLayer.csproj" />
-    <ProjectReference Include="..\Client\CustomBlazorAuthentication.Client.csproj" />
-    <ProjectReference Include="..\Shared\CustomBlazorAuthentication.Shared.csproj" />
+    <Folder Include="Attributes\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Attributes\" />
+    <ProjectReference Include="..\CustomBlazorAuthentication.Client\CustomBlazorAuthentication.Client.csproj" />
+    <ProjectReference Include="..\CustomBlazorAuthentication.DataLayer\CustomBlazorAuthentication.DataLayer.csproj" />
+    <ProjectReference Include="..\CustomBlazorAuthentication.ServiceLayer\CustomBlazorAuthentication.ServiceLayer.csproj" />
+    <ProjectReference Include="..\CustomBlazorAuthentication.Shared\CustomBlazorAuthentication.Shared.csproj" />
   </ItemGroup>
 
 

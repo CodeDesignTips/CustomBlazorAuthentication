@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CustomBlazorAuthentication\Shared\CustomBlazorAuthentication.Shared.csproj" />
+    <ProjectReference Include="..\CustomBlazorAuthentication.Shared\CustomBlazorAuthentication.Shared.csproj" />
   </ItemGroup>
 
 </Project>
