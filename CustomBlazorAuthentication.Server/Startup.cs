@@ -149,7 +149,7 @@ namespace CustomBlazorAuthentication.Server
                 if (File.Exists(xmlFilePath))
                     c.IncludeXmlComments(xmlFilePath);
 
-                //Impostazioni per autenticazione tramite token
+                //Settings for token authentication
                 c.AddSecurityDefinition("Bearer",
                     new OpenApiSecurityScheme
                     {

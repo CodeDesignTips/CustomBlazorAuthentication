@@ -23,7 +23,6 @@ namespace CustomBlazorAuthentication.Client.Services
         }
         #endregion
 
-
         #region Public methods
         /// <summary>
         /// Inser user
