@@ -44,7 +44,7 @@ namespace CustomBlazorAuthentication.Server
             }
             #endregion
 
-            #region Metodi
+            #region Methods
             //
             // Summary:
             //     Creates a new role in a store as an asynchronous operation.

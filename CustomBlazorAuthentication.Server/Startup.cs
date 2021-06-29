@@ -115,7 +115,7 @@ namespace CustomBlazorAuthentication.Server
 
             services.AddRazorPages();
 
-            // Register the Swagger generator, defining 1 or more Swagger documents
+            //Register the Swagger generator, defining 1 or more Swagger documents
             var commonDescription = "**Type here your swagger login page title**";
             var swaggerAuthenticatedDescription = commonDescription;
             swaggerAuthenticatedDescription += "\r\n";
@@ -143,7 +143,7 @@ namespace CustomBlazorAuthentication.Server
                 //Resolve apiDescriptions conflict
                 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
                 
-                // Set the comments path for the Swagger JSON and UI.
+                //Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlFilePath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 if (File.Exists(xmlFilePath))

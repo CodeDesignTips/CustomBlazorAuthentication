@@ -86,6 +86,12 @@ namespace CustomBlazorAuthentication.DataLayer
         /// <returns>False on error, else True</returns>
         public abstract bool InsertUser(Model.User user);
         /// <summary>
+        /// Remove user
+        /// </summary>
+        /// <param name="userId">User id</param>
+        /// <returns>False on error, else True</returns>
+        public abstract bool RemoveUser(Guid userId);
+        /// <summary>
         /// Dispose the object
         /// </summary>
         public void Dispose()

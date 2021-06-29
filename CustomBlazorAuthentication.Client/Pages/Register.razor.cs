@@ -21,11 +21,10 @@ namespace CustomBlazorAuthentication.Client.Pages
         #endregion
 
         #region Properties
-        public EditForm Form { get; set; }
         /// <summary>
-        /// Contesto di modifica del form
+        /// Form
         /// </summary>
-        public EditContext EditContext { get; set; }
+        public EditForm Form { get; set; }
         /// <summary>
         /// User info
         /// </summary>

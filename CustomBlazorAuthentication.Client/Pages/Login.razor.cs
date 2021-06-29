@@ -28,7 +28,7 @@ namespace CustomBlazorAuthentication.Client.Pages
 
         #region Proprties
         /// <summary>
-        /// Contesto di modifica del form
+        /// Edit context
         /// </summary>
         private EditContext EditContext { get; set; }
         /// <summary>

@@ -52,7 +52,26 @@ namespace CustomBlazorAuthentication.DataLayer
                 return false;
             }
 
+            user.UserId = Guid.NewGuid();
             users.Add(user);
+
+            return true;
+        }
+        /// <summary>
+        /// Remove user
+        /// </summary>
+        /// <param name="userId">User id</param>
+        /// <returns>False on error, else True</returns>
+        public override bool RemoveUser(Guid userId)
+        {
+            var user = users.FirstOrDefault(obj => obj.UserId.Equals(userId));
+            if (user == null)
+            {
+                ErrorMessage = $"User not found!";
+                return false;
+            }
+
+            users.Remove(user);
 
             return true;
         }

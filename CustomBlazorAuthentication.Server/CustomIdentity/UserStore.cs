@@ -106,8 +106,25 @@ namespace CustomBlazorAuthentication.Server
             //     the Microsoft.AspNetCore.Identity.IdentityResult of the update operation.
             public Task<IdentityResult> DeleteAsync(Model.User user, CancellationToken cancellationToken)
             {
-                //Not supported
-                return Task.FromResult(IdentityResult.Failed());
+                cancellationToken.ThrowIfCancellationRequested();
+
+                if (user == null)
+                    throw new ArgumentNullException(nameof(user));
+
+                var ret = false;
+                var errorMessage = "";
+                using (var db = DbLayer.CreateObject(ProviderName, ConnectionString))
+                {
+                    ret = db.RemoveUser(user.UserId);
+                    if (!ret)
+                        errorMessage = db.ErrorMessage;
+                }
+
+                if (ret)
+                    return Task.FromResult(IdentityResult.Success);
+
+                return Task.FromResult(IdentityResult.Failed(new IdentityError { Description = errorMessage }));
+
             }
             //
             // Summary:
@@ -133,7 +150,7 @@ namespace CustomBlazorAuthentication.Server
 
                 using (var db = DbLayer.CreateObject(ProviderName, ConnectionString))
                 {
-                    var user = db.GetUser(userId);
+                    var user = db.GetUser(userIdValue);
 
                     return Task.FromResult(user);
                 }
